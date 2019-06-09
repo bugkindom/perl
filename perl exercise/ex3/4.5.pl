@@ -9,5 +9,7 @@ sub absolute {
  $result;
 }
 chomp(my $x=<STDIN>);
-my $result = &absolute($x);
-print "$result";
+chomp(my $y=<STDIN>);
+my $result_x = &absolute($x);
+my $result_y = &absolute($y);
+print "$result_x , $result_y";
